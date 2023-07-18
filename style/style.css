@@ -91,6 +91,7 @@ header nav {
 .banner-text ul li i{
     color: var(--color-primary);
     font-size: 1.25rem;
+    margin-right: 0.8rem;
 }
 .banner-text ul li {
     padding: 1rem 0;
