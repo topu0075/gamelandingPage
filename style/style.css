@@ -163,6 +163,34 @@ header nav {
     margin: 1rem 0;
     padding: 5px;
 }
+/* games-online section */
+.games-online-content{
+    padding: 5rem 0rem 5rem 5rem;
+}
+.games-online-content h3{
+   text-align: right;
+}
+.games-online-content p{
+    text-align: right;
+    width: 300px;
+}
+.games-online{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.games-online img{
+    width: 100%;
+}
+.games-online-img .badge{
+    position: relative;
+    left: 10rem;
+    top: 15rem;
+    width: 80%;
+}
+
 
 /* Responsive Mobile */
 @media screen and (max-width: 576px){
@@ -193,5 +221,8 @@ header nav {
     }
     .cards-container{
         flex-direction: column
+    }
+    .games-online{
+        flex-direction: column;
     }
 }
