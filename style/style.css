@@ -260,7 +260,7 @@ footer {
   color: #fff;
 }
 footer .logo {
-  padding-top: 6.67rem;
+  padding-top: 4.67rem;
 }
 footer .sitemap a {
   text-decoration: none;
@@ -300,9 +300,12 @@ footer .sitemap a {
 .copy-right {
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
+  padding: 1rem;
+  font-size: 12px;
 }
 
-/* Responsive Mobile */
+/* Responsive Mobile Start*/
+
 @media screen and (max-width: 576px) {
   header nav {
     flex-direction: column;
@@ -347,7 +350,6 @@ footer .sitemap a {
     text-align: center;
   }
   .games-online-img .badge {
-    /* position: static; */
     width: 45%;
     z-index: 5;
     left: -2.75rem;
@@ -378,8 +380,44 @@ footer .sitemap a {
     column-gap: 65px;
     padding-bottom: 0.25rem;
   }
-  .copy-right {
-    padding: 1.25rem 0;
-    font-size: 12px;
+}
+
+/* Responsive Mobile END*/
+
+/* Responsive Tablet Start*/
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .banner-content {
+    flex-direction: column-reverse;
+  }
+  .banner-text {
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .banner-img {
+    width: 50%;
+  }
+  .cards-container {
+    flex-direction: column;
+  }
+  .game-catagory {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .games-online {
+    width: 100%;
+    max-width: 90%;
+  }
+  .games-online-content {
+    padding: 3rem;
+    padding-left: 0;
+  }
+  .games-online-img .badge {
+    left: 3.5rem;
+    top: 5.5rem;
+  }
+  .game-catagory {
+    margin-top: 2rem;
   }
 }
