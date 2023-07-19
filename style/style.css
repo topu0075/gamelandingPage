@@ -222,6 +222,7 @@ header nav {
 .games-online-content p {
   text-align: right;
   width: 300px;
+  margin-top: 20px;
 }
 .games-online {
   display: flex;
