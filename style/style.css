@@ -1,7 +1,9 @@
 /* Shared Style */
 :root{
-    --test-menu:#3C354F;
+    --text-menu:#3C354F;
     --color-primary: #FF42A5;
+    --section-title-text: #0B0223;
+    --section-description-text:#534C64;
 
 }
 *{
@@ -28,6 +30,27 @@
     font-weight: 600;
     text-transform: uppercase;
     padding: 1rem 2.15rem;
+}
+
+.section-title{
+    color: var(--section-title-text);
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+.section-title span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+.section-description{
+    color: var(--section-description-text);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 /* Header Section */
@@ -64,7 +87,7 @@ header nav {
 }
 .menu ul li a{
     text-decoration: none;
-    color: var(--test-menu);
+    color: var(--text-menu);
 }
 .youtube{
     color: #F61C0D;
@@ -116,6 +139,31 @@ header nav {
     -webkit-text-fill-color: transparent;
 }
 
+/* online-game Section */
+.online-game{
+   width: 80%;
+   margin: 0 auto;
+}
+.online-game h3{
+    margin-bottom: 1rem;
+}
+.online-game p{
+    margin-bottom: 2.5rem;
+}
+.cards-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.card{
+    display: block;
+    margin: 0 auto;
+}
+.card p{
+    text-align: left;
+    margin: 1rem 0;
+    padding: 5px;
+}
 
 /* Responsive Mobile */
 @media screen and (max-width: 576px){
@@ -143,5 +191,8 @@ header nav {
         background-size: contain;        
         padding: 15px 40px 28px 40px;
         margin: 0 auto;
+    }
+    .cards-container{
+        flex-direction: column
     }
 }
