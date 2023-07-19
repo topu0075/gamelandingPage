@@ -107,34 +107,35 @@ header nav {
   font-size: 1.35rem;
 }
 /* Banner Section */
-.banner-text {
+.banner-text{
   background-image: url(../images/Group\ 14.png);
   background-repeat: no-repeat;
   padding: 150px 400px 280px 400px;
 }
-.banner-content {
+.banner-content{
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-.banner-text ul li i {
+.banner-text ul li i{
   color: var(--color-primary);
   font-size: 1.25rem;
   margin-right: 0.8rem;
 }
-.banner-text ul li {
+.banner-text ul li{
   padding: 1rem 0;
-}
-.banner-text ul li {
   list-style: none;
 }
-.banner-text h3 {
+/* .banner-text ul li {
+  
+} */
+.banner-text h3{
   text-align: center;
   font-size: 2.5rem;
   font-weight: 600;
   text-transform: uppercase;
 }
-.banner-text h1 {
+.banner-text h1{
   text-align: center;
   font-size: 5rem;
   font-weight: 800;
@@ -144,6 +145,15 @@ header nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* We-are-gamer Section*/
+  .We-are-gamer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding: 7rem;
+    margin-bottom: 2rem;
+  }
 
 /* online-game Section */
 .online-game {
@@ -166,7 +176,6 @@ header nav {
   margin: 0 auto;
 }
 .card p {
-  text-align: left;
   margin: 1rem 0;
   padding: 5px;
 }
@@ -230,6 +239,10 @@ header nav {
   top: 15rem;
   width: 80%;
 }
+/* careers */
+.careers{
+  margin-top: 10rem;
+}
 /* Catagory */
 .game-catagory {
   display: grid;
@@ -237,7 +250,8 @@ header nav {
   place-items: center;
   width: 80%;
   margin: 0 auto;
-  margin-top: 10rem;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
 }
 
 .item {
@@ -251,8 +265,9 @@ header nav {
   padding: 10px;
 }
 .item:hover {
-  border: 2px solid var(--color-primary);
+  border: 1px solid var(--color-primary);
   border-radius: 45px;
+  color: var(--color-primary);
   cursor: pointer;
 }
 footer {
@@ -307,6 +322,7 @@ footer .sitemap a {
 /* Responsive Mobile Start*/
 
 @media screen and (max-width: 576px) {
+  
   header nav {
     flex-direction: column;
   }
@@ -319,6 +335,7 @@ footer .sitemap a {
   }
   .banner-content {
     flex-direction: column-reverse;
+    align-items: center;
     gap: 20px;
     padding: 1rem;
   }
@@ -328,9 +345,9 @@ footer .sitemap a {
     margin: 0 auto;
   }
   .banner-text {
-    background-size: contain;
-    padding: 15px 40px 28px 40px;
-    margin: 0 auto;
+    background-size: cover;
+    padding: 15px 40px 30px 40px;
+    margin: 10px auto;
   }
   .cards-container {
     flex-direction: column;
@@ -374,6 +391,15 @@ footer .sitemap a {
   .sitemap {
     flex-wrap: wrap;
   }
+  .footer-social{
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer-social .footer-icon{
+    min-width: 90px;
+  }
   .footer-policy {
     flex-wrap: wrap;
     row-gap: 15px;
@@ -388,6 +414,7 @@ footer .sitemap a {
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .banner-content {
     flex-direction: column-reverse;
+    align-items: center;
   }
   .banner-text {
     padding: 20px;
@@ -396,9 +423,9 @@ footer .sitemap a {
     margin: 0 auto;
     margin-bottom: 50px;
   }
-  .banner-img {
+  /* .banner-img {
     width: 50%;
-  }
+  } */
   .cards-container {
     flex-direction: column;
   }
